@@ -1,38 +1,69 @@
 import React from 'react'
 import { Instagram, Location_2, Massage_2, Phone_2, Tiktok, Time, YouTube } from '../assets/icon'
 import logo2 from '../assets/image/logo2.svg'
+import Slider from "react-slick";
 const Footer = () => {
+  
+  var settings = {
+    dots: false,
+    autoplay: true,
+    variableWidth: true,
+    arrows: false,
+    infinite: true,
+    speed: 8000,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    pauseOnHover: true,
+};
   return (
     <>
       <div className=' footer_bg'>
-        <div className=' container' id=' contactus'>
-          <div className=' d-flex  justify-content-lg-between gap-lg-3 gap-2 flex-wrap footer_py'>
-            <div className=' d-flex gap_10'>
-              <Location_2 />
-              <p className=" mb-0 ff-acumin fs-16 fw-normal color_emphasis op-70 lh-24">
-                Crawley Mill Industrial Estate, Witney, Oxfordshire
-              </p>
-            </div>
-            <div className=' d-flex gap_10'>
-              <Massage_2 />
-              <p className=" mb-0 ff-acumin fs-16 fw-normal color_emphasis op-70 lh-24">
-                book@dryiceblastingpro.co.uk
-              </p>
-            </div>
-            <div className=' d-flex gap_10'>
-              <Phone_2 />
-              <p className=" mb-0 ff-acumin fs-16 fw-normal color_emphasis op-70 lh-24">
-                01865123456
-              </p>
-            </div>
-            <div className=' d-flex gap_10'>
-              <Time />
-              <p className=" mb-0 ff-acumin fs-16 fw-normal color_emphasis op-70 lh-24">
-                Mon - Fri: 9am to 5pm
-              </p>
-            </div>
-          </div>
-          <div className=' row'>
+      <div className=" container" id=' home'>
+                    <div className=' d-flex flex-wrap d-none d-xl-flex justify-content-between pt-lg-4 pt-3 pb-lg-5 pb-4'>
+                        <div className=' d-flex gap-2 color_emphasis'>
+                            <Location_2 />
+                            <p className=' mb-0 ff-acumin fs-16 fw-normal lh-24 text-center op-70 text-nowrap'>Crawley Mill Industrial Estate, Witney, Oxfordshire </p>
+                        </div>
+
+                        <div className=' d-flex gap-2 color_emphasis '>
+                            <Massage_2 />
+                            <p className=' mb-0 ff-acumin  text-nowrap fs-16 fw-normal lh-24 text-center op-70'>book@dryiceblastingpro.co.uk</p>
+                        </div>
+
+                        <div className=' d-flex gap-2 color_emphasis '>
+                            <Phone_2 />
+                            <p className=' text-nowrap mb-0 ff-acumin fs-16 fw-normal lh-24 text-center op-70'>01865123456 </p>
+                        </div>
+
+                        <div className=' d-flex gap-2 color_emphasis '>
+                            <Time />
+                            <p className=' text-nowrap mb-0 ff-acumin fs-16 fw-normal lh-24 text-center op-70'>Mon - Fri: 9am to 5pm</p>
+                        </div>
+                    </div>
+                </div>
+                <Slider {...settings} className='d-xl-none pt-lg-4 pt-3 pb-lg-5 pb-4 '>
+                    <div className=' d-flex gap-2 color_emphasis mx-4'>
+                        <Location_2 />
+                        <p className=' mb-0 ff-acumin fs-16 fw-normal lh-24 text-center op-70 text-nowrap'>Crawley Mill Industrial Estate, Witney, Oxfordshire </p>
+                    </div>
+
+                    <div className=' d-flex gap-2 color_emphasis mx-4 '>
+                        <Massage_2 />
+                        <p className=' mb-0 ff-acumin  text-nowrap fs-16 fw-normal lh-24 text-center op-70'>book@dryiceblastingpro.co.uk</p>
+                    </div>
+
+                    <div className=' d-flex gap-2 color_emphasis mx-4 '>
+                        <Phone_2 />
+                        <p className=' text-nowrap mb-0 ff-acumin fs-16 fw-normal lh-24 text-center op-70'>01865123456 </p>
+                    </div>
+
+                    <div className=' d-flex gap-2 color_emphasis mx-4 '>
+                        <Time />
+                        <p className=' text-nowrap mb-0 ff-acumin fs-16 fw-normal lh-24 text-center op-70'>Mon - Fri: 9am to 5pm</p>
+                    </div>
+                </Slider>
+        <div className=' container'>
+        <div className=' row'>
             <div className=' col-12 col-lg-4'>
               <img src={logo2} alt="logo" />
               <p className=' mb-0 ff-acumin fs-16 lh-24 fw-normal mw_558 pb-lg-0 pb-4 color_emphasis op-70 pt-2'>
@@ -41,7 +72,7 @@ const Footer = () => {
             </div>
             <div className=' col-12 col-lg-8'>
               <div className=' row'>
-                <div className=' col-6 col-sm-4 d-flex  justify-content-lg-end'>
+                <div className=' col-6 col-sm-4 d-flex  justify-content-lg-end pe-lg-5 '>
                   <div>
                     <p className=" mb-0 ff-acumin_bold  fw-bold fs-18 lh-27 color_emphasis pb-3">
                       Quick Link
@@ -78,7 +109,7 @@ const Footer = () => {
                   </div>
                   </div>
                 </div>
-                <div className=' col-6 col-sm-4 d-flex justify-content-lg-end d-sm-block d-none pt-sm-0 pt-4'>
+                <div className=' col-6 col-sm-4 d-sm-flex justify-content-lg-end  d-none pt-sm-0 pt-4'>
                   <div>
                     <p className=" mb-0 ff-acumin_bold  fw-bold fs-18 lh-27 color_emphasis pb-3">
                     Follow us

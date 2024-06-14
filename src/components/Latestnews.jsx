@@ -94,8 +94,7 @@ const Latestnews = () => {
             </div>
             </div>
         </div>
-        <iframe className=' map w-100' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2467.1794289711434!2d-1.510441!3d51.802882!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876cd1e81b3c1e5%3A0x1a6a99487ec82408!2sCrawley%20Mill%20Industrial%20Estate%2C%20Dry%20Ln%2C%20Crawley%2C%20Witney%20OX29%209TJ%2C%20UK!5e0!3m2!1sen!2sin!4v1717651115739!5m2!1sen!2sin"></iframe>
-    </div>
+        <iframe className=' d-flex' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27398.701333139492!2d-1.5110413298560048!3d51.794859528983714!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876cd1e81b3c1e5%3A0x1a6a99487ec82408!2sCrawley%20Mill%20Industrial%20Estate!5e0!3m2!1sen!2sin!4v1717577458432!5m2!1sen!2sin" width="100%" height="456"></iframe>    </div>
     </>
   )
 }

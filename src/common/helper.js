@@ -23,7 +23,7 @@ const Helper = () => {
                     <div class="bg-cho br-14 cur-pointer">
                         <Accordion
                             title="Underbelly Deep-Clean from £750"
-                            content="This is the content of section 1  his is the content of section 1  his is the content of section 1  his is the content of section 1  his is the content of section 1"
+                            content="Crank up the cool factor under your hood with engine bay ice blasting. We delicately lift away oil, grease, and grime without water or chemicals. It's the ultimate detox for your engine, ensuring every hose, wire, and component is treated with the respect it deserves."
                             isOpen={openIndex === 1}
                             toggleAccordion={() => toggleAccordion(1)}
                         />
@@ -31,7 +31,7 @@ const Helper = () => {
                     <div class="bg-lightylw  br-14  cur-pointer">
                         <Accordion
                             title="Ultimate Undercarriage & Engine Bay Overhaul from £1,125"
-                            content="This is the content of section 1  his is the content of section 1  his is the content of section 1  his is the content of section 1  his is the content of section 1"
+                            content="Crank up the cool factor under your hood with engine bay ice blasting. We delicately lift away oil, grease, and grime without water or chemicals. It's the ultimate detox for your engine, ensuring every hose, wire, and component is treated with the respect it deserves."
                             isOpen={openIndex === 2}
                             toggleAccordion={() => toggleAccordion(2)}
                         />
@@ -39,7 +39,7 @@ const Helper = () => {
                     <div class="bg-ylw  br-14 cur-pointer mb-5">
                         <Accordion
                             title="Need Something Else?"
-                            content="This is the content of section 1  his is the content of section 1  his is the content of section 1  his is the content of section 1  his is the content of section 1"
+                            content="Crank up the cool factor under your hood with engine bay ice blasting. We delicately lift away oil, grease, and grime without water or chemicals. It's the ultimate detox for your engine, ensuring every hose, wire, and component is treated with the respect it deserves."
                             isOpen={openIndex === 3}
                             toggleAccordion={() => toggleAccordion(3)}
                         />
