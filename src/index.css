@@ -1,13 +1,415 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Acumin Pro";
+  src: url(./assets/font/FontsFree-Net-Acumin-Pro-Book.ttf);
+}
+.ff-acumin {
+  font-family: 'acumin pro reg' , sans-serif;
+}
+@font-face {
+  font-family:"Acumin Bold" ;
+  src: url(../src/assets/font/Acumin-BdPro.otf);
+}
+.ff-acumin_bold {
+  font-family: 'acumin bold' , sans-serif;
+}
+@font-face {
+  font-family: "TitlingGothicFB Cond";
+  src: url(./assets/font/TitlingGothicFB_Cond_Bold.otf);
+}
+.ff-titling {
+  font-family: 'titlingGothicFB Cond' , sans-serif;
+}
+:root {
+  --fs-sm: 14px;
+  --fs-md: 16px;
+  --fs-lg: 18px;
+  --fs-xl: 20px;
+  --fs-2xl: 22px;
+  --fs-3xl:24px;
+  --fs-4xl: 28px;
+  --fs-5xl: 30px;
+  --fs-6xl: 32px;
+  --fs-7xl: 48px;
+  --fs-8xl: 50px;
+  --fs-9xl: 96px;
+  /* color */
+  --color-emphasis-:#FFFFFF;
+  --color-secondary-: #FA6A00;
+  --color-tertiary-: #636363;
+  --color-lightwh-: rgba(16, 26, 46, 1);
+  --color-bgcol: #F0FDF4;
+  --color-bgsecondary-: #F1DBDB;
+  --color-bgtertiary-: #757575;
+  --color-btn-: #1219D2;
+  --color-bg_color-: #DCFCE7;
+  --color-black-: #000000;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.opacty_80 {
+  opacity: 80%;
+}
+
+.color_black {
+  color: var(--color-black-);
+}
+
+.color-yellow {
+  color: var(--color-yellow);
+}
+
+.fs-14 {
+  font-size: var(--fs-sm);
+}
+
+.fs-16 {
+  font-size: var(--fs-md);
+}
+
+.fs-18 {
+  font-size: var(--fs-lg);
+}
+
+.fs-20 {
+  font-size: var(--fs-xl);
+}
+
+.fs-22 {
+  font-size: var(--fs-2xl);
+}
+
+.fs-24 {
+  font-size: var(--fs-3xl);
+}
+
+.fs-28 {
+  font-size: var(--fs-4xl);
+}
+
+.fs-30 {
+  font-size: var(--fs-5xl);
+}
+
+.fs-32 {
+  font-size: var(--fs-6xl);
+}
+
+.fs-48 {
+  font-size: var(--fs-7xl);
+}
+
+.fs-50 {
+  font-size: var(--fs-8xl);
+}
+
+.fs-96  {
+  font-size: var(--fs-9xl);
+}
+
+
+  /* LINE-HEIGHT */
+
+  .lh-14 {
+    line-height: 14px;
+  }
+
+  .lh-19 {
+    line-height: 19px;
+  }
+
+  .lh-21 {
+    line-height: 21px;
+  }
+
+  .lh-22 {
+    line-height: 22px;
+  }
+
+  .lh-24 {
+    line-height: 24px;
+  }
+
+  .lh-25 {
+    line-height: 25px;
+  }
+
+  .lh-27 {
+    line-height: 27px;
+  }
+
+  .lh-30 {
+    line-height: 30px;
+  }
+
+  .lh-36 {
+    line-height: 36px;
+  }
+
+  .lh-39 {
+    line-height: 39px;
+  }
+
+  .lh-44 {
+    line-height: 44px;
+  }
+
+  .lh-57 {
+    line-height: 57px;
+  }
+
+  .lh-115 {
+    line-height: 115px;
+  }
+
+
+  .fw-900 {
+    font-weight: 900;
+  }
+
+  /* OPACITY */
+
+  .op-70 {
+    opacity: 70%;
+  }
+
+.color_emphasis {
+  color: var(--color-emphasis-);
+}
+
+.color_secondary {
+  color: var(--color-secondary-);
+}
+
+.color_tertiary {
+  color: var(--color-tertiary-);
+}
+
+.color_white {
+  color: var(--color-white-);
+}
+
+.color_lightwh {
+  color: var(--color-lightwh-);
+}
+
+.col-colbg {
+  color: var(--color-bgcol-);
+}
+
+.color-bg {
+  color: var(--color-bgsecondary-);
+}
+
+.color_ter {
+  color: var(--color-bgtertiary-);
+}
+
+.color_btn {
+  color: var(--color-btn-);
+}
+
+.bg_color {
+  color: var(--color-bg_color-);
+}
+
+
+@media (max-width:992px) {
+  :root {
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fs-lg: 18px;
+    --fs-xl: 20px;
+    --fs-2xl: 22px;
+    --fs-3xl:24px;
+    --fs-4xl: 26px;
+    --fs-5xl: 28px;
+    --fs-6xl: 30px;
+    --fs-7xl: 40px;
+    --fs-8xl: 44px;
+    --fs-9xl: 80px;
+  }
+  .lh-14 {
+    line-height: 14px;
+  }
+
+  .lh-19 {
+    line-height: 19px;
+  }
+
+  .lh-21 {
+    line-height: 21px;
+  }
+
+  .lh-22 {
+    line-height: 22px;
+  }
+
+  .lh-24 {
+    line-height: 24px;
+  }
+
+  .lh-25 {
+    line-height: 25px;
+  }
+
+  .lh-27 {
+    line-height: 27px;
+  }
+
+  .lh-30 {
+    line-height: 30px;
+  }
+
+  .lh-36 {
+    line-height: 36px;
+  }
+
+  .lh-39 {
+    line-height: 39px;
+  }
+
+  .lh-44 {
+    line-height: 40px;
+  }
+
+  .lh-57 {
+    line-height: 50px;
+  }
+
+  .lh-115 {
+    line-height: 100px;
+  }
+}
+@media (max-width:768px) {
+  :root {
+    --fs-sm: 14px;
+    --fs-md: 16px;
+    --fs-lg: 18px;
+    --fs-xl: 19px;
+    --fs-2xl: 20px;
+    --fs-3xl:22px;
+    --fs-4xl: 24px;
+    --fs-5xl: 26px;
+    --fs-6xl: 28px;
+    --fs-7xl: 38px;
+    --fs-8xl: 40px;
+    --fs-9xl: 70px;
+  }
+  .lh-14 {
+    line-height: 14px;
+  }
+
+  .lh-19 {
+    line-height: 19px;
+  }
+
+  .lh-21 {
+    line-height: 21px;
+  }
+
+  .lh-22 {
+    line-height: 22px;
+  }
+
+  .lh-24 {
+    line-height: 24px;
+  }
+
+  .lh-25 {
+    line-height: 25px;
+  }
+
+  .lh-27 {
+    line-height: 27px;
+  }
+
+  .lh-30 {
+    line-height: 30px;
+  }
+
+  .lh-36 {
+    line-height: 32px;
+  }
+
+  .lh-39 {
+    line-height: 36px;
+  }
+
+  .lh-44 {
+    line-height: 38px;
+  }
+
+  .lh-57 {
+    line-height: 48px;
+  }
+
+  .lh-115 {
+    line-height: 80px;
+  }
+}
+@media (max-width:576px) {
+  :root {
+    --fs-sm: 12px;
+    --fs-md: 14px;
+    --fs-lg: 16px;
+    --fs-xl: 18px;
+    --fs-2xl: 19px;
+    --fs-3xl:20px;
+    --fs-4xl: 22px;
+    --fs-5xl: 26px;
+    --fs-6xl: 28px;
+    --fs-7xl: 30px;
+    --fs-8xl: 34px;
+    --fs-9xl: 38px;
+  }
+  .lh-14 {
+    line-height: 14px;
+  }
+
+  .lh-19 {
+    line-height: 15px;
+  }
+
+  .lh-21 {
+    line-height: 18px;
+  }
+
+  .lh-22 {
+    line-height: 20px;
+  }
+
+  .lh-24 {
+    line-height: 22px;
+  }
+
+  .lh-25 {
+    line-height: 23px;
+  }
+
+  .lh-27 {
+    line-height: 25px;
+  }
+
+  .lh-30 {
+    line-height: 26px;
+  }
+
+  .lh-36 {
+    line-height: 28px;
+  }
+
+  .lh-39 {
+    line-height: 30px;
+  }
+
+  .lh-44 {
+    line-height: 34px;
+  }
+
+  .lh-57 {
+    line-height: 38px;
+  }
+
+  .lh-115 {
+    line-height: 45px;
+  }
 }
